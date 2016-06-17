@@ -237,7 +237,7 @@ def init_notebook():
         session.use_global_asset('phosphor-all.js')
         session.use_global_asset('flexx-ui.css')
         session.use_global_asset('flexx-ui.js')
-    except IndexError as err:
+    except IndexError:
         pass  # Ok if it fails; assets can be loaded dynamically.
     
     # Open server - the notebook helper takes care of the JS resulting
